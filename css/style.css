@@ -452,6 +452,7 @@ html {
 	.jumbotron .description{
 		padding-left: 20px;
 		font-size: 25px;
+		text-align: left;
 	}
 }
 @media(max-width: 414px){

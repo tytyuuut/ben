@@ -774,8 +774,18 @@ html {
 	display: flex;
 	justify-content: center;
 }
+.column .content{
+	min-height: 512px;
+}
+.Graphics .content{
+	min-height: 500px;
+}
 .column h2{
 	text-align: center;
+	margin: 15px 0;
+}
+.column p{
+	margin: 0;
 }
 .column a:hover{
 	color:#4ba03d!important;
@@ -789,6 +799,12 @@ html {
 @media(max-width: 768px){
 	.row {
 		margin: 0px 0px;
+	}
+	.column .content{
+		min-height: auto;
+	}
+	.Graphics .content{
+		min-height: auto;
 	}
 }
 .row,

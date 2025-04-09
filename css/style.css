@@ -775,7 +775,7 @@ html {
 	justify-content: center;
 }
 .column .content{
-	min-height: 512px;
+	min-height: 580px;
 }
 .Graphics .content{
 	min-height: 500px;

@@ -774,6 +774,9 @@ html {
 	display: flex;
 	justify-content: center;
 }
+.column{
+	color: #666;
+}
 .column .content{
 	min-height: 580px;
 }

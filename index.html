@@ -1,1186 +1,1443 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AndyDesign</title>
+    <link rel="shortcut icon" href="assets/top-logo.png">
+    <link rel="bookmark" href="assets/top-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="side-menu" aria-label="主要導覽">
+        <a class="brand" href="#about" aria-label="回到關於">
+          <span class="brand-mark">A</span>
+          <span>
+            <strong>Andy Work</strong>
+          </span>
+        </a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale=2">
-    <title>Andy-design</title>
-    <link rel="shortcut icon" href="images/top-logo.png">
-    <link rel="bookmark" href="images/top-logo.png">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="vender/typed.js-master/demos.css">
-    <link rel="stylesheet" type="text/css" href="vender/OwlCarousel2-2.3.4/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="vender/fancybox-master/jquery.fancybox.min.css">
-    <link rel="stylesheet" type="text/css" href="vender/aos/aos.css">
-</head>
+        <nav class="menu-list">
+          <a class="menu-link is-active" href="#about">關於</a>
+          <a class="menu-link" href="#tools">使用工具</a>
+          <a class="menu-link" href="#ability">能力</a>
+          <a class="menu-link" href="#works">作品</a>
+        </nav>
+      </aside>
 
-<body>
-    <div class="wrepper">
-        <!------header start-------->
-        <header class="header">
-            <div class="navbar">
-                <div class="container">
-                    <a href="#!" class="logo">ＯＯＯ室內設計</a>
-                    <ul class="menu js-one-page-nav js-dropdown-content" id="popup-nav">
-                        <li class="menu-item">
-                            <a href="#About" class="menu-link">About</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#Design-tool" class="menu-link">Tool</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#Ability" class="menu-link">Ability</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#Works" class="menu-link">Works</a>
-                        </li>
-                        <!-- <li class="menu-item">
-                            <a href="#Experience" class="menu-link">Experience</a>
-                        </li> -->
-                        <li class="menu-item">
-                            <a href="#contact" class="menu-link">Contact</a>
-                        </li>
-                    </ul>
-                    <a href="#popup-nav" class="menu-toggle js-dropdown-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <!------header end-------->
-        <section class="main">
-            <!------jumbotron start-------->
-            <div id="jumbotron" data-aos="fade-up">
-                <div class="hero jumbotron" style="background-image: url(images/首頁.jpg);">
-                    <div class="mask-dark"></div>
-                    <div class="container">
-                        <div class="title">
-                            <span id="typed3"></span>
-                        </div>
-                        <div class="description">
-                            <h3>Welcome everyone to see my portfolio.</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!------jumbotron end-------->
-            <div id="About" class="hero-bgc-white2">
-                <div class="container">
-                    <div class="slogan" data-aos="fade-down">
-                        <div class="section-intro">
-                            <div class="title js-fadeInLeft">
-                                <h4>About</h4>
-                            </div>
-                            <!-- <div class="description">
-                                
-                            </div>
-                            <div class="line"></div> -->
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="row">
-                            <div class="col-1-2 col-md-12 js-fadeInLeft" data-aos="fade-right">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/me.jpg)"></div>
-                                </div>
-                            </div>
-                            <div class="col-1-2 col-md-12 js-fadeInRight" data-aos="fade-left">
-                                <p class="description2">到2017年畢業後進了⼀間整合⾏銷公司做視覺設計師，從事⾏設計海報以及名⽚....等等周邊商品，2019年在系統公司當任設計前端主管，主要跟⽼闆討論專案的功能跟可⾏性，及專案圖篇繪製跟官網程式設計編寫，2020在
-                                    1111⼈⼒銀⾏做網⾴切版⼯程師，從事網⾴切版跟Vue專案修改及JS功能特效功能，跟使⽤GIT指令版控運⽤，以及前後端⼯程師合作溝通完成專案，之後
-                                    2024到資展國際學習使⽤PHP架設後台會員登⼊註冊，以及使⽤CRUD進⾏跟MySQL資料庫傳輸交換，後⾯學習⽤NodeJS架設後台API及Router切換，以
-                                    及使⽤REACT NEXT製作電商網站，使⽤API Router進⾏直接呼叫DB結合MySQL資料庫，跟組員⼀起完成登⼊會員及購物⾞等功能，⽬前在學習
-                                    Typescript及C++的編輯使⽤，積極不斷學習其他程式碼。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!------Design-tool start-------->
-            <div id="Design-tool" class="Design-Tool hero-bgc-gray2">
-                <div class="container">
-                    <div class="slogan" data-aos="fade-down">
-                        <div class="section-intro">
-                            <div class="title js-fadeInRight">
-                                <h4>Tool</h4>
-                            </div>
-                            <!-- <div class="description">
-                               
-                            </div>
-                            <div class="line"></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="Design-Tool-item" data-aos="fade-up">
-                <div class="container">
-                    <div class="owl-carousel owl-theme ">
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/html.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Html</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●●○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/css.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Css</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●●○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/scss.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Scss</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/jquery.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Jquery</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/javascript.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Javascript</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/ts.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>TypeScript</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/tailwind.webp);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>tailwind</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/Bootstrap.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Bootstrap</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●●○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/Vue.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Vue</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/nuxt.webp);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Nuxt</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/react.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>React</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/next.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Next</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/php.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>PHP</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/MySQL.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>MySQL</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/MongoDB.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>MongoDB</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/node.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>NodeJS</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●○○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/ai.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>illustrator</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●●○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/ps.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Photoshop</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●●○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/figma.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Figam</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-12">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/788px-Adobe_XD_CC_icon.svg.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Adobe XD</h6>
-                                </div>
-                                <div class="description">
-                                    <p>熟練度:<span>●●●○○</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!------Design tool end-------->
-            <!------Ability start-------->
-            <div id="Ability" class="hero-bgc-white2">
-                <div class="container">
-                    <div class="slogan">
-                        <div class="section-intro" data-aos="fade-down">
-                            <div class="title js-fadeInLeft">
-                                <h4> Ability </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Ability-item">
-                        <div class="row" data-aos="fade-right">
-                            <div class="col-1-3 col-md-12 js-fadeInUp">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/GraphicsDesign.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Graphics Design</h6>
-                                </div>
-                                <div class="description">
-                                    <p>擅長平面排版、品牌等視覺設計技法。</p>
-                                </div>
-                            </div>
-                            <div class="col-1-3 col-md-12 js-fadeInUp">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/資產1@3x.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Prototype Design</h6>
-                                </div>
-                                <div class="description">
-                                    <p>擅長設計介面互動設計。</p>
-                                </div>
-                            </div>
-                            <div class="col-1-3 col-md-12 js-fadeInUp">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/資產2@3x.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Web Seo</h6>
-                                </div>
-                                <div class="description">
-                                    <p>分析網站瀏覽曝光度。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" data-aos="fade-left">
-                            <div class="col-1-3 col-md-12 js-fadeInUp">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/uidesign.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>UI Design</h6>
-                                </div>
-                                <div class="description">
-                                    <p>了解產品開發流程，以及設計思考。</p>
-                                </div>
-                            </div>
-                            <div class="col-1-3 col-md-12 js-fadeInUp">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/data.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Data Design</h6>
-                                </div>
-                                <div class="description">
-                                    <p>了解資料開發及設計。</p>
-                                </div>
-                            </div>
-                            <div class="col-1-3 col-md-12 js-fadeInUp">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url(images/webdesign.png);"></div>
-                                </div>
-                                <div class="title">
-                                    <h6>Web Design</h6>
-                                </div>
-                                <div class="description">
-                                    <p>擅長網頁視覺排版及語言撰寫。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!------Ability end-------->
-            <!------work start-------->
-            <div id="Works" class="work hero-bgc-gray2">
-                <div class="container">
-                    <div class="slogan">
-                        <div class="section-intro" data-aos="fade-down">
-                            <div class="title">
-                                <h4> Work </h4>
-                            </div>
-                            <div class="description">
-                               
-                            </div>
-                            <!-- <div class="line"></div> -->
-                        </div>
-                    </div>
-                    <div id="myBtnContainer" class="work-item" data-aos="fade-left">
-                        <button class="btn web active">程式作品</button>
-                        <button class="btn work">工作作品</button>
-                        <button class="btn graphics">設計作品</button>
-                    </div>
-                    <div class="row" data-aos="fade-right">
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/test20241111/#/index">
-                                    <img src="images/Puffs.png"/ style="width:100%">
-                                    <h2>Vue3 + Vite<br>泡芙網站</h2>
-                                    <p>Vue + boo網站結構編碼架構</p>
-                                    <p>後台CRUD功能</p>
-                                    <p>SCSS樣式撰寫</p>
-                                    <p>javascript編寫</p>
-                                    <p>串接API</p>
-                                    <p>購物車功能</p>
-                                    <p>Vite工具打包構建</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://netflix-test.onrender.com/">
-                                    <img src="images/netfilx.jpg"/ style="width:100%">
-                                    <h2>React + Vite<br>製作NETFLIX</h2>
-                                    <p>React + TailWind 網站結構編碼</p>
-                                    <p>MongoDB結合NodeJS資料儲存</p>
-                                    <p>NodeJS後台製作AP</p>
-                                    <p>登入註冊會員功能</p>
-                                    <p>Vite工具打包構建</p>
-                                    <p>串接第三方TMDB API 電影資料庫</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                
-                                    <img src="images/next.jpg"/ style="width:100%">
-                                    <h2>React + Next<br>購物網站-資策會團體作品</h2>
-                                    <p>Next + Bootstrap網站結構編碼</p>
-                                    <p>API Router 頁面切換</p>
-                                    <p>後台串接API渲染前台顯示</p>
-                                    <p>RESTful API 使用CRUD功能</p>
-                                    <p>結合MySQL修改資料畫面</p>
-                               
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                
-                                    <img src="images/reactNative.jpg"/ style="width:100%">
-                                    <h2>React Native<br>備忘錄</h2>
-                                    <p>React Native app結構編碼</p>
-                                    <p>convex後端平台API串接</p>
-                                    <p>TypeScript功能屬性撰寫</p>
-                                    <p>Expo框架設計</p>
-                               
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                
-                                    <img src="images/py-form.jpg"/ style="width:100%">
-                                    <h2>React + python Todoist</h2>
-                                    <p>React 結構編碼</p>
-                                    <p>python製作後端API</p>
-                                    <p>使用Flask python框架及SQLAlchemy的SQL資料庫</p>
-                                    <p>串接python API 製作CRUD功能</p>
-                               
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                    <img src="images/phpwork.jpg"/ style="width:100%">
-                                    <h2>PHP<br>購物網站後台-資策會團體作品</h2>
-                                    <p>PHP結合HTML建置網站結構</p>
-                                    <p>結合MySQL修改資料畫面</p>
-                                    <p>後台製作CRUD功能</p>
-                                    <p>用PHP + SQL 撰寫API進行改編新增MySQL資料表</p>
-                                    <p>PHP API 進CRUD改變畫面資料跟資料判斷功能</p>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/watch_web/">
-                                    <img src="images/watch.webp"/ style="width:100%">
-                                    <h2>Vue + Nuxt<br>手錶購物車網站</h2>
-                                    <p>Nuxt網站結構編碼及資料渲染切換</p>
-                                    <p>Router頁面切換及資料跳轉</p>
-                                    <p>Scss樣式撰寫</p>
-                                    <p>javascript、jQuery效果編寫</p>
-                                    <p>購物車功能</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/pasta/">
-                                    <img src="images/pasta.webp"/ style="width:100%">
-                                    <h2>Vue + Nuxt<br>義大利麵網頁設計切版</h2>
-                                    <p>Nuxt網站結構編碼及資料渲染切換</p>
-                                    <p>Scss樣式撰寫</p>
-                                    <p>Photoshop、Illustrator圖片修改設計</p>
-                                    <p>Figma介面排版</p>
-                                    <p>javascript、jQuery效果編寫</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/teeth/">
-                                    <img src="images/theen.webp"/ style="width:100%">
-                                    <h2>Vue + Tailwind<br>牙醫形象網頁設計切版</h2>
-                                    <p>Vue網站結構編碼架構</p>
-                                    <p>Tailwind樣式撰寫</p>
-                                    <p>Photoshop、Illustrator圖片修改設計</p>
-                                    <p>javascript、jQuery效果編寫</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column Graphics col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt01/">
-                               <img src="images/001.webp" style="width:100%">
-                                <h2>嵐拉麵網站UI設計</h2>
-                                <p>Adobe XD介面設計排版</p>
-                                <p>Photoshop、Illustrator圖片設計</p>   
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column Graphics col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt03/">
-                               <img src="images/003.webp" style="width:100%">
-                                <h2>牛排店網站UI設計</h2>
-                                <p>Adobe XD介面設計排版</p>
-                                <p>Photoshop、Illustrator圖片設計</p> 
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column Graphics col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt04/">
-                               <img src="images/004.webp" style="width:100%">
-                                <h2>隔設計公司網站UI設計</h2>
-                                <p>Adobe XD介面設計排版</p>
-                                <p>Photoshop、Illustrator圖片設計</p> 
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="column Graphics col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt05/">
-                               <img src="images/005.webp" style="width:100%">
-                                <h2>Baker麵包店網站UI設計</h2>
-                                <p>Adobe XD介面設計排版</p>
-                                <p>Photoshop、Illustrator圖片設計</p>   
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column Graphics col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt07/">
-                               <img src="images/app-3.jpg"/ style="width:100%">                               
-                                <h2>Live app介面UI設計</h2>
-                                <p>Adobe XD介面設計排版</p>
-                                <p>Photoshop、Illustrator圖片設計</p>                       
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column Graphics col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt06/">
-                               <img src="images/ui-2.jpg"/ style="width:100%">
-                                <h2>3C-King app介面UI設計</h2>
-                                <p>Adobe XD介面設計排版</p>
-                                <p>Photoshop、Illustrator圖片設計</p>    
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column Graphics col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt15/">
-                                  <img src="images/01.jpg"/ style="width:100%">
-                                  <h2>Interior home app介面UI設計</h2>
-                                  <p>Adobe XD介面設計排版</p>
-                                  <p>使用者痛點分析</p>
-                                  <p>wireframe草稿</p>
-                                  <p>人物誌</p>
-                                  <p>User story</p>
-                                  <p>Photoshop、Illustrator圖片設計</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column Graphics Design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt12/">
-                                <img src="images/02.png"/ style="width:100%">
-                                <h2>一河粉視覺設計</h2>
-                                <p>新品菜色照片</p>
-                                <p>Photoshop、Illustrator圖片設計</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column Graphics Design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt13/" >
-                                <img src="images/03.png"/ style="width:100%">
-                                <h2>Delicious Fresh包裝視覺設計</h2>
-                                <p>Photoshop、Illustrator圖片設計</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://ccssy123.github.io/Andy-Beef/">
-                               <img src="images/Artboard 13 Copy 3.jpg"/ style="width:100%">
-                                <h2>Andy牛排店網頁設計切版</h2>
-                                <p>HTML網站結構編碼架構</p>
-                                <p>CSS樣式撰寫</p>
-                                <p>Bootstrap套件樣式</p>
-                                <p>Photoshop、Illustrator圖片修改設計</p>
-                                <p>javascript、jQuery效果編寫</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://ccssy123.github.io/PartitionDesign/">
-                               <img src="images/04.jpg"/ style="width:100%">
-                                <h2>隔設計公司網頁設計切版</h2>
-                                <p>HTML網站結構編碼架構</p>
-                                <p>CSS樣式撰寫</p>
-                                <p>Owl Carousel輪播外掛</p>
-                                <p>Photoshop、Illustrator圖片修改設計</p>
-                                <p>javascript、jQuery效果編寫</p>    
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt16/">
-                               <img src="images/cake1111.jpg"/ style="width:100%">
-                                <h2>Baker麵包店網頁設計切版</h2>
-                                <p>HTML網站結構編碼架構</p>
-                                <p>CSS樣式撰寫</p>
-                                <p>Swiper輪播外掛</p>
-                                <p>rellax視差滾動外掛</p>
-                                <p>Bootstrap套件樣式</p>
-                                <p>Photoshop、Illustrator圖片修改設計</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://ccssy123.github.io/0814-noodles/">
-                               <img src="images/Artboard 13.jpg"/ style="width:100%">
-                                <h2>嵐拉麵網頁設計切版</h2>
-                                <p>HTML網站結構編碼架構</p>
-                                <p>CSS樣式撰寫</p>
-                                <p>Bootstrap套件樣式</p>
-                                <p>Photoshop、Illustrator圖片修改設計</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/game_test/">
-                               <img src="images/game_test.webp"/ style="width:100%">
-                                <h2>HTML5遊戲練習</h2>
-                                <p>HTML網站結構編碼架構</p>
-                                <p>CSS樣式撰寫</p>
-                                <p>Canvas編寫</p>
-                                <p>Photoshop、Illustrator圖片修改設計</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/game_test2/">
-                                    <img src="images/game_test2.webp"/ style="width:100%">
-                                    <h2>HTML5遊戲練習2</h2>
-                                    <p>HTML網站結構編碼架構</p>
-                                    <p>CSS樣式撰寫</p>
-                                    <p>Canvas編寫</p>
-                                    <p>Photoshop、Illustrator圖片修改設計</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/ajax_test/">
-                                    <img src="images/ajax_img.webp"/ style="width:100%">
-                                    <h2>新竹醫院搜尋器</h2>
-                                    <p>HTML網站結構編碼及資料渲染切換</p>
-                                    <p>CSS樣式撰寫</p>
-                                    <p>Ajax get撈取本地json資料</p>
-                                    <p>javascript、jQuery效果編寫</p>
-                                    <p>HTML.css.Js.ajax</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/CRUD/">
-                                    <img src="images/CRUD.webp"/ style="width:100%">
-                                    <h2>CRUD留言板</h2>
-                                    <p>HTML網站結構編碼及資料渲染切換</p>
-                                    <p>CSS樣式撰寫</p>
-                                    <p>新增.讀取.更新.刪除功能</p>
-                                    <p>javascript編寫</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active web_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/calendar/">
-                                    <img src="images/calendar.png"/ style="width:100%">
-                                    <h2>日曆</h2>
-                                    <p>HTML網站結構編碼及資料渲染切換</p>
-                                    <p>CSS樣式撰寫</p>
-                                    <p>javascript編寫</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column work_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://www.1111.com.tw/search/job?page=1&col=ab&sort=desc&ks=1111">
-                                    <img src="images/work1.jpg"/ style="width:100%">
-                                    <h2>1111搜尋頁切版</h2>
-                                    <p>HTML網站結構編碼</p>
-                                    <p>SCSS樣式撰寫</p>
-                                    <p>javascript下拉勾選篩功能</p>
-                                    <p>Bootstrap套件樣式</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column work_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://event.1111.com.tw/event23/findjob/">
-                                    <img src="images/work5.jpg"/ style="width:100%">
-                                    <h2>1111找工作第一快切版</h2>
-                                    <p>HTML網站結構編碼</p>
-                                    <p>SCSS樣式撰寫</p>
-                                    <p>javascript下拉勾選篩功能</p>
-                                    <p>Bootstrap套件樣式</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column work_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://event.1111.com.tw/event23/rdss/">
-                                    <img src="images/work6.jpg"/ style="width:100%">
-                                    <h2>1111替代役找工作切版</h2>
-                                    <p>HTML網站結構編碼</p>
-                                    <p>CSS樣式撰寫</p>
-                                    <p>javascript功能</p>
-                                    <p>Bootstrap套件樣式</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column work_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://event.1111.com.tw/event23/kaohsiungfindjob/">
-                                    <img src="images/work7.jpg"/ style="width:100%">
-                                    <h2>1111高青局切版</h2>
-                                    <p>HTML網站結構編碼</p>
-                                    <p>CSS樣式撰寫</p>
-                                    <p>javascript功能</p>
-                                    <p>Bootstrap套件樣式</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column work_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://guide.1111.com.tw/">
-                                    <img src="images/1111work.jpg"/ style="width:100%">
-                                    <h2>1111職典切版版面修改</h2>
-                                    <p>HTML網站結構編碼</p>
-                                    <p>SCSS樣式撰寫</p>
-                                    <p>Bootstrap套件樣式</p>
-                                    <p>Nuxt3功能調整與UI優化</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column work_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                
-                                    <img src="images/work2.jpg"/ style="width:100%">
-                                    <h2>系統會員等級設定後台</h2>
-                                    <p>React Next撰寫</p>
-                                    <p>使用Material UI元件樣式</p>
-                                    <p>抓取result api Get抓取設定資料</p>
-                                    <p>使用result api Patch修改設定資料</p>
-                                    <p>連接MySQL資料</p>
-                               
-                            </div>
-                        </div>
-                        <div class="column work_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                
-                                    <img src="images/work3.jpg"/ style="width:100%">
-                                    <h2>系統會員錯誤內容下載</h2>
-                                    <p>React Next撰寫</p>
-                                    <p>使用Material UI元件樣式</p>
-                                    <p>連接Mongodb資料</p>
-                                    <p>專換JSON下載資料檔</p>
-                              
-                            </div>
-                        </div>
-                        <div class="column work_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                               
-                                    <img src="images/work4.jpg"/ style="width:100%">
-                                    <h2>系統會員表單篩選功能</h2>
-                                    <p>React Next撰寫</p>
-                                    <p>使用Material UI元件樣式</p>
-                                    <p>抓取result api Get抓取設定資料</p>
-                                    <p>連接MySQL資料</p>
-                                
-                            </div>
-                        </div>
-                        <!-- <div class="column active 3D design col-md-12 js-fadeInUp">
-                            <div class="content">
-                                <a href="https://ccssy123.github.io/-Indoor-3Ddesign/" >
-                                    <img src="images/05.png"/ style="width:100%;">
-                                    <h2>Indoor 3Ddesign</h2>
-                                    <p>3D design</p>
-                                </a>
-                            </div>
-                        </div> -->
-                        
-                        
-                        
-                        <!-- <div class="column active ui_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt08/">
-                               <img src="images/interface.jpg"/ style="width:100%">
-                               
-                                <h2>Interface design</h2>
-                                <p>UI Design</p>
-                            
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active ui_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt11/">
-                               <img src="images/螢幕快照 2020-04-29 下午3.06.22.jpg"/ style="width:100%">
-                               
-                                <h2>Water prototype</h2>
-                                <p>UI Design</p>
-                            
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active ui_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt10/">
-                               <img src="images/Artboard 13 Copy 8.jpg"/ style="width:100%">
-                               
-                                <h2>Food app prototype</h2>
-                                <p>UI Design</p>
-                            
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active ui_design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt09/">
-                               <img src="images/Artboard 13 Copy 9.jpg"/ style="width:100%">
-                               
-                                <h2>Weather app prototype</h2>
-                                <p>UI Design</p>
-                            
-                                </a>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="column active Graphics Design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/0429-txt14/" >
-                               <img src="images/07.png"/ style="width:100%">
-                               
-                                <h2>BusinessCard Design</h2>
-                                <p>Graphics Design</p>
-                            
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active Graphics Design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="https://tytyuuut.github.io/txt17/" >
-                               <img src="images/牙齒圖.jpg"/ style="width:100%">
-                               
-                                <h2>illustration Design</h2>
-                                <p>Graphics Design</p>
-                            
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column active Graphics Design col-md-12 js-fadeInUp" >
-                            <div class="content">
-                                <a href="images/牙齒搖晃.jpg" data-fancybox>
-                               <img src="images/衛教圖.jpg"/ style="width:100%">
-                               
-                                <h2>illustration Design</h2>
-                                <p>Graphics Design</p>
-                            
-                                </a>
-                            </div>
-                        </div> -->
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <!------work end------->
-            <div class="box"></div>
-            <!------ contact start------->
-            <!-- <div id="contact" class="contact">
-                <div class="jumbotron-contact" style="background-image: url(images/contact.jpg);">
-                    <div class="mask-dark2"></div>
-                    <div class="container">
-                        <div class="slogan">
-                            <div class="section-intro">
-                                <div class="title js-fadeInUp">
-                                    <h4> Contact </h4>
-                                </div>
-                                <div class="description">
-                                   
-                                </div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="row">
-                                <div class="col-1-3 col-md-12 js-fadeInUp">
-                                    <div class="title">
-                                        <h6>PHONE</h6>
-                                    </div>
-                                    <div class="description">
-                                        <p>+886 915-456-580</p>
-                                    </div>
-                                </div>
-                                <div class="col-1-3 col-md-12 js-fadeInUp">
-                                    <div class="title">
-                                        <h6>LINE ID</h6>
-                                    </div>
-                                    <div class="description">
-                                        <p>ccssy1234</p>
-                                    </div>
-                                </div>
-                                <div class="col-1-3 col-md-12 js-fadeInUp">
-                                    <div class="title">
-                                        <h6>E-MAIL</h6>
-                                    </div>
-                                    <div class="description">
-                                        <p>tytyuuut@gmail.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!------ contact end------->
-            <!-------Copyright start-------->
-            <div class="copyright">
-                <p>© Copyright 2018 All rights reserved</p>
-            </div>
+      <main class="main-content">
+        <section class="full-image-section" aria-label="作品集滿版主視覺">
+          <div class="typing-hero">
+            <span class="hero-label">Portfolio Start</span>
+            <p class="typing-text" id="typing-text">大家好我是Andy</p>
+            <p class="typing-subtitle">UI Designer / Frontend Engineer</p>
+          </div>
+          <!-- <div class="hero-sticker" aria-hidden="true">Pink + Yellow + Blue</div> -->
         </section>
+        <section id="about" class="section hero-section" aria-labelledby="about-title">
+          <div class="hero-copy" data-aos="zoom-in-right">
+            <p class="eyebrow">Frontend / UI Design / Creative Coding</p>
+            <!-- <h1 id="about-title">嗨，我是你的名字，打造有節奏感的網站與介面。</h1> -->
+            <p class="hero-text">
+              具備 UI 設計、視覺設計、網頁設計與前端開發經驗，熟悉 Photoshop、Illustrator、Adobe XD、Figma、Sketch 等設計工具，能進行介面規劃、視覺設計與網站版面製作。具備 React、Next.js、Vue／Nuxt 等前端框架實務經驗，能執行切版、元件開發、互動功能製作與 API 串接。另具備 Node.js、PHP、MySQL 基礎開發與資料庫應用能力，並善用 GPT、CodeX 等 AI 工具提升開發與除錯效率，同時持續研究 MCP 串接 Figma 與 CodeX，優化設計轉前端切版流程
+            </p>
+            <!-- <div class="hero-actions">
+              <a class="button primary" href="#works">查看作品</a>
+              <a class="button secondary" href="mailto:hello@example.com">聯絡我</a>
+            </div> -->
+          </div>
+
+          <div class="hero-art" aria-label="遊戲風作品集主視覺" data-aos="zoom-in-left">
+            <img src="assets/me6.jpg" alt="粉紅、黃色與藍色遊戲風格的程式與設計主視覺" />
+          </div>
+        </section>
+
+        <section id="tools" class="section" aria-labelledby="tools-title">
+          <div class="section-heading">
+            <p class="eyebrow">Toolbox</p>
+            <h2 id="tools-title">使用工具</h2>
+          </div>
+          <div class="tools-carousel" data-aos="zoom-in-up">
+            <div class="swiper tool-swiper">
+              <div class="swiper-wrapper">
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge yellow">Design</span></div>
+              <img class="tool-icon" src="assets/figma.png" alt="Figma icon" />
+              <h3>Figma</h3>
+              <p>規劃 UI、Design System、Prototype 與跨部門設計溝通。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge yellow">Design</span></div>
+              <img class="tool-icon" src="assets/ai.png" alt="Adobe Illustrator icon" />
+              <h3>Illustrator</h3>
+              <p>製作品牌視覺、向量圖形、icon 與平面設計素材。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge yellow">Design</span></div>
+              <img class="tool-icon" src="assets/ps.png" alt="Adobe Photoshop icon" />
+              <h3>Photoshop</h3>
+              <p>處理影像合成、修圖、活動視覺與網站圖像素材。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge yellow">Design</span></div>
+              <img class="tool-icon" src="assets/ae.png" alt="Adobe After Effects icon" />
+              <h3>After Effects</h3>
+              <p>製作動態視覺、介面動效概念與影音特效素材。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge yellow">Design</span></div>
+              <img class="tool-icon" src="assets/pr.png" alt="Adobe Premiere Pro icon" />
+              <h3>Premiere Pro</h3>
+              <p>剪輯影片內容，整理作品展示、活動紀錄與社群素材。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge yellow">Design</span></div>
+              <img class="tool-icon" src="assets/sketch.png" alt="Sketch icon" />
+              <h3>Sketch</h3>
+              <p>設計介面稿、元件樣式與早期產品視覺提案。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge pink">AI</span></div>
+              <img class="tool-icon" src="assets/chatgpt.jpg" alt="MongoDB icon" />
+              <h3>GPT</h3>
+              <p>運用GPT協助程式問題排查、內容生成與開發流程優化</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge pink">AI</span></div>
+              <img class="tool-icon" src="assets/XAI.svg" alt="MongoDB icon" />
+              <h3>XAI</h3>
+              <p>使用xAI輔助資料整理、問題分析與設計發想應用</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge pink">AI</span></div>
+              <img class="tool-icon" src="assets/builder.jpg" alt="MongoDB icon" />
+              <h3>Builder.io</h3>
+              <p>使用Builder.io協助頁面內容編輯、版型建置與前端視覺呈現優化</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge pink">AI</span></div>
+              <img class="tool-icon" src="assets/codeX.png" alt="MongoDB icon" />
+              <h3>UX pilot</h3>
+              <p>運用UX Pilot輔助介面發想、使用流程規劃與設計靈感整理</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge blue">Frontend</span></div>
+              <img class="tool-icon" src="assets/html.png" alt="HTML icon" />
+              <h3>HTML</h3>
+              <p>建立清楚語意結構，讓內容、SEO 與後續樣式維護更穩定。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge blue">Frontend</span></div>
+              <img class="tool-icon" src="assets/css.png" alt="CSS icon" />
+              <h3>CSS</h3>
+              <p>製作 RWD、動畫、版面系統與符合品牌感的視覺細節。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge blue">Frontend</span></div>
+              <img class="tool-icon" src="assets/javascript.png" alt="JavaScript icon" />
+              <h3>Javascript</h3>
+              <p>處理互動、資料流程與前端邏輯，讓介面更有操作感。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge blue">Frontend</span></div>
+              <img class="tool-icon" src="assets/react.png" alt="React icon" />
+              <h3>React</h3>
+              <p>用元件化方式建立可維護、可重用的前端介面。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge blue">Frontend</span></div>
+              <img class="tool-icon" src="assets/Vue.png" alt="Vue icon" />
+              <h3>Vue</h3>
+              <p>開發系統平台、表單流程與中大型互動頁面。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge blue">Frontend</span></div>
+              <img class="tool-icon" src="assets/Angular.png" alt="Next.js icon" />
+              <h3>Angular.js</h3>
+              <p>進行前端頁面開發、元件維護與互動功能整合。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge blue">Frontend</span></div>
+              <img class="tool-icon" src="assets/next.png" alt="Next.js icon" />
+              <h3>Next.js</h3>
+              <p>建立具備路由、SEO 與前後端整合能力的 React 網站。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge blue">Frontend</span></div>
+              <img class="tool-icon" src="assets/ts.png" alt="TypeScript icon" />
+              <h3>TypeScript</h3>
+              <p>透過型別提升專案可讀性，減少維護與協作時的錯誤。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge pink">Backend</span></div>
+              <img class="tool-icon" src="assets/node.png" alt="Node.js icon" />
+              <h3>Node.js</h3>
+              <p>處理 API、資料串接與後端邏輯，支援前後端流程整合。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge pink">Backend</span></div>
+              <img class="tool-icon" src="assets/php.png" alt="PHP icon" />
+              <h3>PHP</h3>
+              <p>開發網站功能、後台流程與既有系統維護需求。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge yellow">Database</span></div>
+              <img class="tool-icon" src="assets/MySQL.png" alt="MySQL icon" />
+              <h3>MySQL</h3>
+              <p>規劃資料表、查詢資料與支援網站後台資料管理。</p>
+            </article>
+            <article class="swiper-slide tool-card">
+              <div><span class="tool-badge yellow">Database</span></div>
+              <img class="tool-icon" src="assets/MongoDB.png" alt="MongoDB icon" />
+              <h3>MongoDB</h3>
+              <p>使用文件式資料結構，處理彈性資料與快速原型需求。</p>
+            </article>
+              </div>
+            </div>
+            <button class="tool-swiper-button tool-swiper-prev" type="button" aria-label="上一個工具"></button>
+            <button class="tool-swiper-button tool-swiper-next" type="button" aria-label="下一個工具"></button>
+            <div class="tool-swiper-pagination"></div>
+          </div>
+        </section>
+
+        <section id="ability" class="section ability-section" aria-labelledby="ability-title">
+          <div class="section-heading">
+            <p class="eyebrow">Ability</p>
+            <h2 id="ability-title">能力項目</h2>
+          </div>
+
+          <div class="ability-grid">
+            <article class="ability-card" data-aos="zoom-in-up">
+              <span class="ability-index">01</span>
+              <img class="ability-icon" src="assets/GraphicsDesign.png" alt="Graphics Design icon" />
+              <h3>Graphics Design</h3>
+              <p>擅長平面排版、品牌識別與活動視覺設計，能整理資訊並轉化成清楚的視覺表現。</p>
+            </article>
+            <article class="ability-card" data-aos="zoom-in-up">
+              <span class="ability-index">02</span>
+              <img class="ability-icon" src="assets/uidesign.png" alt="Prototype Design icon" />
+              <h3>Prototype Design</h3>
+              <p>規劃介面流程、互動狀態與操作路徑，讓設計在開發前就能被檢查與溝通。</p>
+            </article>
+            <article class="ability-card" data-aos="zoom-in-up">
+              <span class="ability-index">03</span>
+              <img class="ability-icon" src="assets/seo.png" alt="Web SEO icon" />
+              <h3>Web SEO</h3>
+              <p>理解網站曝光與內容結構，能從標題、語意與頁面架構提升搜尋與閱讀表現。</p>
+            </article>
+            <article class="ability-card" data-aos="zoom-in-up">
+              <span class="ability-index">04</span>
+              <img class="ability-icon" src="assets/uidesign.png" alt="UI Design icon" />
+              <h3>UI Design</h3>
+              <p>熟悉產品開發流程與設計思考，能建立一致、易讀且可操作的介面規則。</p>
+            </article>
+            <article class="ability-card" data-aos="zoom-in-up">
+              <span class="ability-index">05</span>
+              <img class="ability-icon" src="assets/data.png" alt="Data Design icon" />
+              <h3>Data Design</h3>
+              <p>理解資料欄位、後台流程與資訊呈現，能協助把資料需求整理成可用介面。</p>
+            </article>
+            <article class="ability-card" data-aos="zoom-in-up">
+              <span class="ability-index">06</span>
+              <img class="ability-icon" src="assets/webdesign.png" alt="Web Design icon" />
+              <h3>Web Design</h3>
+              <p>擅長網頁視覺排版、RWD 與前端語法撰寫，能兼顧設計完成度與實作可行性。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="works" class="section" aria-labelledby="works-title">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Works</p>
+            <h2 id="works-title">作品</h2>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="作品分類">
+            <button class="tab-button is-active" type="button" role="tab" aria-selected="false" aria-controls="visual-panel" id="visual-tab" data-tab="visual">
+              視覺設計作品
+            </button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="uiux-panel" id="uiux-tab" data-tab="uiux">
+              UI/UX設計作品
+            </button>
+            <button class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="code-panel" id="code-tab" data-tab="code">
+              Web開發作品
+            </button>
+          </div>
+
+          <div class="tab-panel is-active" id="visual-panel" role="tabpanel" aria-labelledby="visual-tab">
+            <div class="work-grid"> 
+              <!-- <article class="work-card design">
+                <img class="work-thumb" src="assets/02.png" alt="一河粉視覺設計截圖" />
+                <span class="work-index">01</span>
+                <h3>一河粉視覺設計</h3>
+                <p>新品菜色照片設計與 Photoshop、Illustrator 視覺處理。</p>
+                <a href="https://tytyuuut.github.io/0429-txt12/" target="_blank" rel="noreferrer" aria-label="查看一河粉視覺設計">View Case</a>
+              </article> -->
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/03.png" alt="Delicious Fresh 包裝視覺設計截圖" />
+                <span class="work-index">01</span>
+                <h3>Delicious Fresh 包裝設計</h3>
+                <p>規劃水果瓶包裝視覺設計</p>
+                <p>使用Illustrator製作包裝圖像</p>
+                <p>使用Photoshop進行影像修圖</p>
+                <p>完成印刷完稿與品質確認</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt13/" target="_blank" rel="noreferrer" aria-label="查看一河粉視覺設計">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/0be5c971797469.5bd16cd282577.png" alt="Delicious Fresh 包裝視覺設計截圖" />
+                <span class="work-index">02</span>
+                <h3>隔公司LOGO設計</h3>
+                <p>規劃品牌識別與標誌設計方向</p>
+                <p>使用Illustrator設計品牌標誌</p>
+                <p>優化字體編排與色彩配置</p>
+                <p>建立Logo應用與輸出規範</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/0be5c971797469.5bd16cd282577.png" data-fancybox="work-gallery2" data-caption="隔公司LOGO設計" aria-label="隔公司LOGO設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/2 PSD Poster Mockup For Poster Designs Branding.png" alt="Delicious Fresh 包裝視覺設計截圖" />
+                <span class="work-index">03</span>
+                <h3>SUSHI名片設計</h3>
+                <p>設計日式刺身餐廳識別標誌</p>
+                <p>建立品牌視覺與色彩規範</p>
+                <p>使用Illustrator繪製向量圖</p>
+                <p>使用Photoshop完成提案圖</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/2 PSD Poster Mockup For Poster Designs Branding.png" data-fancybox="work-gallery3" data-caption="SUSHI名片設計" aria-label="SUSHI名片設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/一河粉文宣設計.jpg" alt="一河粉文宣設計" />
+                <span class="work-index">04</span>
+                <h3>一河粉文宣設計</h3>
+                <p>規劃越式餐廳宣傳物料</p>
+                <p>設計名片與集點卡版型</p>
+                <p>製作問卷視覺與版面編排</p>
+                <p>運用AI與PS完成設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/一河粉文宣設計IMG.jpg" data-fancybox="work-gallery4" data-caption="一河粉文宣設計" aria-label="一河粉文宣設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/一河粉宣傳海報設計.jpg" alt="一河粉宣傳海報設計" />
+                <span class="work-index">05</span>
+                <h3>一河粉宣傳海報設計</h3>
+                <p>設計越式餐廳宣傳海報</p>
+                <p>製作社群粉絲專頁素材</p>
+                <p>使用Illustrator編排設計</p>
+                <p>使用Photoshop修圖優化</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/一河粉宣傳海報設計IMG.jpg" data-fancybox="work-gallery5" data-caption="一河粉宣傳海報設計" aria-label="一河粉宣傳海報設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/口臭衛教圖設計.jpg" alt="口臭衛教圖設計" />
+                <span class="work-index">06</span>
+                <h3>口臭衛教圖設計</h3>
+                <p>規劃口臭治療衛教流程</p>
+                <p>規劃治療步驟視覺化</p>
+                <p>提升資訊閱讀與理解性</p>
+                <p>使用Illustrator製作完稿</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/口臭IMG.jpg" data-fancybox="work-gallery6" data-caption="口臭衛教圖設計" aria-label="口臭衛教圖設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/洗牙衛教圖設計.jpg" alt="洗牙衛教圖設計" />
+                <span class="work-index">07</span>
+                <h3>洗牙衛教圖設計</h3>
+                <p>規劃洗牙治療衛教流程</p>
+                <p>設計資訊圖表與版面</p>
+                <p>提升資訊傳達易讀性</p>
+                <p>使用Illustrator製作完稿</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/洗牙IMG.jpg" data-fancybox="work-gallery7" data-caption="洗牙衛教圖設計" aria-label="洗牙衛教圖設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/牙齦流血衛教圖設計.jpg" alt="洗牙衛教圖設計" />
+                <span class="work-index">08</span>
+                <h3>牙齦流血衛教圖設計</h3>
+                <p>規劃牙齦流血治療流程</p>
+                <p>設計衛教圖表與版面</p>
+                <p>提升醫療資訊易讀性</p>
+                <p>使用Illustrator製作完稿</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/牙齦流血IMG.jpg" data-fancybox="work-gallery8" data-caption="牙齦流血衛教圖設計" aria-label="牙齦流血衛教圖設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/牙醫系統宣傳設計.jpg" alt="牙醫系統宣傳設計" />
+                <span class="work-index">09</span>
+                <h3>牙醫系統宣傳設計</h3>
+                <p>規劃衛教系統宣傳視覺</p>
+                <p>規劃視覺版面與資訊</p>
+                <p>使用Illustrator繪製圖像</p>
+                <p>使用Photoshop修飾影像</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                 <a href="assets/完美情人智慧齒-2 1.jpg" data-fancybox="work-gallery9" data-caption="牙醫系統宣傳設計" aria-label="牙醫系統宣傳設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/牙醫系統宣傳設計2.jpg" alt="牙醫系統宣傳設計2" />
+                <span class="work-index">10</span>
+                <h3>牙醫系統宣傳設計</h3>
+                <p>設計牙齒紀錄系統宣傳圖</p>
+                <p>規劃系統推廣視覺素材</p>
+                <p>使用Illustrator製作設計</p>
+                <p>使用Photoshop優化影像</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+               <a href="assets/完美情人智慧齒-6 1.jpg" data-fancybox="work-gallery10" data-caption="牙醫系統宣傳設計" aria-label="牙醫系統宣傳設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/牙醫系統宣傳設計3.jpg" alt="牙醫系統宣傳設計3" />
+                <span class="work-index">11</span>
+                <h3>牙醫系統宣傳設計</h3>
+                <p>設計牙醫病歷系統宣傳圖</p>
+                <p>規劃醫療資訊視覺呈現</p>
+                <p>建立系統推廣宣傳素材</p>
+                <p>使用AI與PS完成設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/完美情人智慧齒-1 1.jpg" data-fancybox="work-gallery11" data-caption="牙醫系統宣傳設計" aria-label="牙醫系統宣傳設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/牙醫衛教宣傳DM設計.jpg" alt="牙醫衛教宣傳DM設計" />
+                <span class="work-index">12</span>
+                <h3>牙醫衛教宣傳DM設計</h3>
+                <p>規劃牙醫衛教宣傳內容</p>
+                <p>設計DM版面與視覺元素</p>
+                <p>使用Illustrator製作設計</p>
+                <p>使用Photoshop修飾影像</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/牙醫DM.jpg" data-fancybox="work-gallery12" data-caption="牙醫衛教宣傳DM設計" aria-label="牙醫衛教宣傳DM設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/尾牙機票勘版設計.jpg" alt="尾牙機票勘版設計" />
+                <span class="work-index">13</span>
+                <h3>尾牙機票勘版設計</h3>
+                <p>設計尾牙活動票券版面</p>
+                <p>規劃活動主題視覺風格</p>
+                <p>製作票券圖像與資訊欄</p>
+                <p>使用AI與PS完成設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+               <a href="assets/機票.jpg" data-fancybox="work-gallery13" data-caption="尾牙機票勘版設計" aria-label="尾牙機票勘版設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/萬聖LOGO設計.jpg" alt="萬聖LOGO設計" />
+                <span class="work-index">14</span>
+                <h3>萬聖LOGO設計</h3>
+                <p>設計萬聖節主題Logo</p>
+                <p>建立節慶視覺識別元素</p>
+                <p>調整字體與圖形配置</p>
+                <p>使用AI與PS完成設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/萬聖節IMG.jpg" data-fancybox="work-gallery14" data-caption="萬聖LOGO設計" aria-label="萬聖LOGO設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/聖誕LOGO設計.jpg" alt="聖誕LOGO設計" />
+                <span class="work-index">15</span>
+                <h3>聖誕LOGO設計</h3>
+                <p>設計聖誕節主題標誌</p>
+                <p>規劃節慶品牌視覺風格</p>
+                <p>使用Illustrator繪製圖像</p>
+                <p>使用Photoshop修飾效果</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/聖誕節IMG.jpg" data-fancybox="work-gallery15" data-caption="聖誕LOGO設計" aria-label="聖誕LOGO設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/端午LOGO設計.jpg" alt="端午LOGO設計" />
+                <span class="work-index">16</span>
+                <h3>端午LOGO設計</h3>
+                <p>設計端午節主題標誌</p>
+                <p>規劃節慶品牌視覺風格</p>
+                <p>使用Illustrator繪製圖像</p>
+                <p>使用Photoshop修飾效果</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                 <a href="assets/端午節IMG.jpg" data-fancybox="work-gallery16" data-caption="端午LOGO設計" aria-label="端午LOGO設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/12.png" alt="端午LOGO設計" />
+                <span class="work-index">17</span>
+                <h3>隔設計名片</h3>
+                <p>設計室內設計品牌名片</p>
+                <p>建立專業識別視覺風格</p>
+                <p>規劃黑底版面與排版</p>
+                <p>使用AI與PS完成設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/12.png" data-fancybox="work-gallery17" data-caption="隔設計名片" aria-label="隔設計名片">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/10.png" alt="端午LOGO設計" />
+                <span class="work-index">18</span>
+                <h3>幼稚園課表設計</h3>
+                <p>設計幼稚園課程時間表</p>
+                <p>規劃童趣繽紛視覺風格</p>
+                <p>規劃課程資訊與編排</p>
+                <p>使用Illustrator完成設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/10.png" data-fancybox="work-gallery18" data-caption="幼稚園課表設計" aria-label="幼稚園課表設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card design">
+                <img class="work-thumb" src="assets/24.png" alt="端午LOGO設計" />
+                <span class="work-index">19</span>
+                <h3>蜂蜜廠商DM設計</h3>
+                <p>設計蜂蜜品牌宣傳DM</p>
+                <p>規劃童趣繽紛視覺風格</p>
+                <p>運用蜂蜜色系發想設計</p>
+                <p>使用Illustrator完成設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                 <a href="assets/24.png" data-fancybox="work-gallery19" data-caption="蜂蜜廠商DM設計" aria-label="蜂蜜廠商DM設計">前往詳細</a>
+              </article>
+            </div>
+          </div>
+          <div class="tab-panel" id="uiux-panel" role="tabpanel" aria-labelledby="uiux-tab" hidden>
+            <div class="work-grid">
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/001.webp" alt="嵐拉麵網站 UI 設計截圖" />
+                <span class="work-index">01</span>
+                <h3>嵐拉麵網站 UI 設計</h3>
+                <h3>蜂蜜廠商DM設計</h3>
+                <p>設計日式拉麵店官方網站視覺介面</p>
+                <p>結合深色木質風格與日式品牌元素</p>
+                <p>規劃網站版面架構與使用者體驗</p>
+                <p>使用Illustrator與Adobe XD製作設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/788px-Adobe_XD_CC_icon.svg.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt01/" target="_blank" rel="noreferrer" aria-label="查看嵐拉麵網站 UI 設計">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/003.webp" alt="牛排店網站 UI 設計截圖" />
+                <span class="work-index">02</span>
+                <h3>牛排店網站 UI 設計</h3>
+                <p>規劃牛排餐廳品牌網站介面</p>
+                <p>結合食材元素與動態視覺設計</p>
+                <p>設計首頁滾動特效與版面配置</p>
+                <p>使用Illustrator與Adobe XD製作設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/788px-Adobe_XD_CC_icon.svg.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt03/" target="_blank" rel="noreferrer" aria-label="查看牛排店網站 UI 設計">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/004.webp" alt="隔設計公司網站 UI 設計截圖" />
+                <span class="work-index">03</span>
+                <h3>隔設計公司網站 UI 設計</h3>
+                <p>規劃室內設計公司網站介面</p>
+                <p>採用文青簡約風格規劃視覺</p>
+                <p>建立品牌形象與版面配置</p>
+                <p>使用Illustrator與Adobe XD製作設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/788px-Adobe_XD_CC_icon.svg.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt04/" target="_blank" rel="noreferrer" aria-label="查看隔設計公司網站 UI 設計">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/005.webp" alt="Baker 麵包店網站 UI 設計截圖" />
+                <span class="work-index">04</span>
+                <h3>Baker 麵包店網站 UI 設計</h3>
+                <p>規劃麵包店品牌網站視覺設計</p>
+                <p>結合視差滾動與文青風格元素</p>
+                <p>設計網站架構與版面配置</p>
+                <p>使用Illustrator、XD與Photoshop製作</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/788px-Adobe_XD_CC_icon.svg.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt05/" target="_blank" rel="noreferrer" aria-label="查看 Baker 麵包店網站 UI 設計">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/app-3.jpg" alt="Live app 介面 UI 設計截圖" />
+                <span class="work-index">05</span>
+                <h3>Live App 介面 UI 設計</h3>
+                <p>設計運動社交主題App介面</p>
+                <p>採用藍白色系打造簡約風格</p>
+                <p>規劃運動活動搜尋與地圖功能</p>
+                <p>使用Illustrator與Adobe XD製作設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/788px-Adobe_XD_CC_icon.svg.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt07/" target="_blank" rel="noreferrer" aria-label="查看 Live App 介面 UI 設計">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/ui-2.jpg" alt="3C-King App 介面 UI 設計截圖" />
+                <span class="work-index">06</span>
+                <h3>3C-King App UI 設計</h3>
+                <p>規劃3C電商App介面與操作流程</p>
+                <p>採用簡約風格凸顯產品展示效果</p>
+                <p>規劃商品分類與會員集點功能</p>
+                <p>使用Illustrator、XD製作Prototype</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/788px-Adobe_XD_CC_icon.svg.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt06/" target="_blank" rel="noreferrer" aria-label="查看 3C-King App UI 設計">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/01.jpg" alt="Interior home app 介面 UI 設計截圖" />
+                <span class="work-index">07</span>
+                <h3>Interior Home App UI 設計</h3>
+                <p>規劃室內設計App UI/UX使用流程</p>
+                <p>規劃家具分類與室內風格專區</p>
+                <p>設計Wireframe與介面架構規劃</p>
+                <p>使用Illustrator、Sketch與PS完成</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/sketch.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt15/" target="_blank" rel="noreferrer" aria-label="查看 Interior Home App UI 設計">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/露營UI.jpg" alt="Interior home app 介面 UI 設計截圖" />
+                <span class="work-index">08</span>
+                <h3>露營網頁UI設計</h3>
+                <p>規劃露營電商網站UI介面設計</p>
+                <p>採用日系簡約風格與大地色系</p>
+                <p>設計首頁、商品頁與購物流程</p>
+                <p>使用Figma完成介面規劃與排版</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/figma.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <!-- <a href="assets/露營UI.jpg" data-fancybox="camping-ui-gallery" data-caption="露營網頁UI設計" aria-label="查看露營網頁UI設計圖片">前往詳細</a> -->
+                <a href="assets/首頁.jpg" data-fancybox="camping-ui-gallery" data-caption="露營網頁UI設計 - 首頁" aria-label="查看露營網頁UI設計圖片">前往詳細</a>
+                <a href="assets/產品頁.jpg" data-fancybox="camping-ui-gallery" data-caption="露營網頁UI設計 - 產品頁" hidden></a>
+                <a href="assets/詳細產品頁.jpg" data-fancybox="camping-ui-gallery" data-caption="露營網頁UI設計 - 詳細產品頁" hidden></a>
+                <a href="assets/購物車1.jpg" data-fancybox="camping-ui-gallery" data-caption="露營網頁UI設計 - 購物車 1" hidden></a>
+                <a href="assets/購物車2.jpg" data-fancybox="camping-ui-gallery" data-caption="露營網頁UI設計 - 購物車 2" hidden></a>
+                <a href="assets/購物車3.jpg" data-fancybox="camping-ui-gallery" data-caption="露營網頁UI設計 - 購物車 3" hidden></a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/登山UI.jpg" alt="Interior home app 介面 UI 設計截圖" />
+                <span class="work-index">09</span>
+                <h3>登山網頁UI設計</h3>
+                <p>規劃登山主題網站UI介面設計</p>
+                <p>採用森林暗色系塑造品牌風格</p>
+                <p>設計網站宣傳頁面與視覺呈現</p>
+                <p>使用Figma完成介面排版設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/figma.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/登山IMG.jpg" data-fancybox="work1-UI" data-caption="登山網頁UI設計" aria-label="登山網頁UI設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/pasta.webp" alt="Interior home app 介面 UI 設計截圖" />
+                <span class="work-index">10</span>
+                <h3>義大利麵網頁設計</h3>
+                <p>設計義大利麵餐廳網站介面</p>
+                <p>結合食材元素強化品牌特色</p>
+                <p>規劃宣傳頁面與資訊架構配置</p>
+                <p>使用Figma完成介面排版設計</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/figma.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                 <a href="assets/義大利IMG.jpg" data-fancybox="work2-UI" data-caption="登山網頁UI設計" aria-label="登山網頁UI設計">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card job">
+                <img class="work-thumb" src="assets/teethImg.jpg" alt="Interior home app 介面 UI 設計截圖" />
+                <span class="work-index">11</span>
+                <h3>牙醫系統UI設計</h3>
+                <p>設計牙醫系統檔案上傳操作介面</p>
+                <p>規劃病患牙齒狀態檢視頁面</p>
+                <p>設計X-Ray影像資訊呈現版面</p>
+                <p>建立牙齒分類與狀態管理介面</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/sketch.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/teeth01.jpg" data-fancybox="work3-UI" data-caption="牙醫系統UI設計 X-Ray影像版面設定" aria-label="牙醫系統UI設計 後端管理系統">前往詳細</a>
+                <a href="assets/teeth02.jpg" data-fancybox="work3-UI" data-caption="牙醫系統UI設計 X-Ray影像版面" hidden></a>
+                <a href="assets/teeth03.jpg" data-fancybox="work3-UI" data-caption="牙醫系統UI設計 病患狀態頁面" hidden></a>
+                <a href="assets/teeth04.jpg" data-fancybox="work3-UI" data-caption="牙醫系統UI設計 分類區塊頁面" hidden></a>
+                <a href="assets/teeth05.jpg" data-fancybox="work3-UI" data-caption="牙醫系統UI設計 圖片上傳頁面" hidden></a>
+              </article>
+            </div>
+          </div> 
+          <div class="tab-panel" id="code-panel" role="tabpanel" aria-labelledby="code-tab" hidden>
+            <div class="work-grid">
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/work1.jpg" alt="1111 搜尋頁截圖" />
+                <span class="work-index">01</span>
+                <h3>1111 搜尋頁面</h3>
+                <p>負責1111搜尋頁面前端與各瀏覽器功能開發</p>
+                <p>使用HTML建構SEO友善網站架構與語意化標籤</p>
+                <p>運用SCSS模組化開發、RWD與介面優化</p>
+                <p>使用Git版控協作並整合JavaScript與Bootstrap功能</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://www.1111.com.tw/search/job?page=1&col=ab&sort=desc&ks=1111" target="_blank" rel="noreferrer" aria-label="查看 1111 搜尋頁">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/work5.jpg" alt="1111 找工作第一快截圖" />
+                <span class="work-index">02</span>
+                <h3>1111 找工作第一快網頁</h3>
+                <p>負責1111找工作首頁前端與各瀏覽器功能開發</p>
+                <p>使用HTML建構SEO友善網站架構與語意化標籤</p>
+                <p>運用SCSS、RWD及SwiperJS打造輪播與互動介面</p>
+                <p>使用Git版控協作並整合JavaScript與Bootstrap功能</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://event.1111.com.tw/event23/findjob/" target="_blank" rel="noreferrer" aria-label="查看 1111 找工作第一快">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/work6.jpg" alt="1111 替代役找工作截圖" />
+                <span class="work-index">03</span>
+                <h3>1111 替代役找工作</h3>
+                <p>負責1111替代役找工作專區前端開發與各瀏覽器功能開發</p>
+                <p>使用HTML建構SEO友善網站架構與語意化標籤</p>
+                <p>運用SCSS、RWD及SwiperJS打造互動式介面</p>
+                <p>使用Git版控協作並整合JavaScript與Bootstrap功能</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://event.1111.com.tw/event23/rdss/" target="_blank" rel="noreferrer" aria-label="查看 1111 替代役找工作">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/work7.jpg" alt="1111 高青局截圖" />
+                <span class="work-index">04</span>
+                <h3>1111 高青局頁面</h3>
+                <p>負責1111高青局專區網站前端開發與各瀏覽器功能開發</p>
+                <p>使用HTML建構SEO友善網站架構與語意化標籤</p>
+                <p>運用Vue元件化開發、SCSS及RWD設計</p>
+                <p>使用Git版控協作並整合SwiperJS與Bootstrap</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Vue.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://event.1111.com.tw/event23/kaohsiungfindjob/" target="_blank" rel="noreferrer" aria-label="查看 1111 高青局">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111work.jpg" alt="1111 職典截圖" />
+                <span class="work-index">05</span>
+                <h3>1111 職典網站</h3>
+                <p>負責1111職典網站前端功能開發與各瀏覽器功能開發</p>
+                <p>使用Vue3與Nuxt3進行元件開發與調整</p>
+                <p>運用SCSS建置RWD響應式網站介面</p>
+                <p>使用Git版控協作並整合Bootstrap元件</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/nuxt.webp" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://guide.1111.com.tw/" target="_blank" rel="noreferrer" aria-label="查看 1111 職典">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111大學網切版.jpg" alt="1111大學網" />
+                <span class="work-index">06</span>
+                <h3>1111大學網網頁</h3>
+                <p>負責1111大學網網站前端與各瀏覽器功能開發</p>
+                <p>使用HTML建構SEO友善網站架構與語意化標籤</p>
+                <p>運用Tailwind開發RWD響應式網站介面</p>
+                <p>使用Git版控協作並開發JavaScript功能</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/tailwind.webp" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://university.1111.com.tw/zone/university/" target="_blank" rel="noreferrer" aria-label="系統會員表單篩選功能作品說明">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111企業職缺頁面切版.jpg" alt="1111企業職缺頁面" />
+                <span class="work-index">07</span>
+                <h3>1111企業職缺頁面網頁</h3>
+                <p>負責1111企業職缺頁面前端開發與各瀏覽器功能開發</p>
+                <p>使用HTML、SCSS進行元件化與RWD</p>
+                <p>開發與維護JavaScript互動功能及介面</p>
+                <p>透過Git版控協作整合Bootstrap元件</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://www.1111.com.tw/job/97527652" target="_blank" rel="noreferrer" aria-label="系統會員表單篩選功能作品說明">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111求職1指通.jpg" alt="1111求職1指通" />
+                <span class="work-index">08</span>
+                <h3>1111求職1指通</h3>
+                <p>參與1111求職1指通網站前端與各瀏覽器功能開發</p>
+                <p>使用SCSS進行響應式版面與樣式管理</p>
+                <p>維護JavaScript功能並優化使用者體驗</p>
+                <p>透過Git版控協作整合Bootstrap元件</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://www.1111.com.tw/Monograph/JobElves" target="_blank" rel="noreferrer" aria-label="系統會員表單篩選功能作品說明">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/東吳人.jpg" alt="東吳人" />
+                <span class="work-index">09</span>
+                <h3>1111東吳人就業平台</h3>
+                <p>負責1111東吳人就業平台前端開發與各瀏覽器功能開發</p>
+                <p>使用HTML與SCSS建置RWD響應式網站介面</p>
+                <p>維護JavaScript功能並優化使用者體驗</p>
+                <p>透過Git版控協作整合Bootstrap元件</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://ejob.scu.edu.tw/" target="_blank" rel="noreferrer" aria-label="系統會員表單篩選功能作品說明">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111求職神器切版.jpg" alt="1111求職神器" />
+                <span class="work-index">09</span>
+                <h3>1111求職神器網頁</h3>
+                <p>負責1111求職神器網站前端開發與各瀏覽器功能開發</p>
+                <p>使用HTML與SCSS建置RWD響應式網站介面</p>
+                <p>開發與維護JavaScript功能及Bootstrap元件</p>
+                <p>使用Git版控協作提升專案開發效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://ai-lab.1111.com.tw/ai-job-acceleration/" target="_blank" rel="noreferrer" aria-label="系統會員表單篩選功能作品說明">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111招募系統設計.jpg" alt="1111招募系統設計" />
+                <span class="work-index">10</span>
+                <h3>1111招募系統設計</h3>
+                <p>負責1111招募內部系統前端功能開發與各瀏覽器功能開發</p>
+                <p>使用HTML與SCSS建置RWD響應式網站介面</p>
+                <p>開發JavaScript功能並整合Bootstrap元件</p>
+                <p>使用Git版控協作及維護ASP CSHTML頁面</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/asp.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://recruit.1111.com.tw/dProductservice.aspx?_gl=1*d7oc64*_gcl_au*NjQwNTM5OTAxLjE3ODE1NzE5Njc.*_ga*NTc5ODE0MTI3LjE3ODE0OTQxNTc.*_ga_R9MB2PNZV9*czE3ODE1NzE5NjckbzEkZzEkdDE3ODE1NzI0OTkkajMkbDAkaDA." target="_blank" rel="noreferrer" aria-label="系統會員表單篩選功能作品說明">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111客製化履歷.jpg" alt="1111客製化履歷" />
+                <span class="work-index">11</span>
+                <h3>1111客製化履歷</h3>
+                <p>負責1111客製化履歷系統前端開發與各瀏覽器功能開發</p>
+                <p>使用HTML與SCSS建置RWD響應式網站介面</p>
+                <p>優化列印模式CSS並解決Print版面跑版問題</p>
+                <p>透過Git版控協作整合Bootstrap元件</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://www.1111.com.tw/Resume/ResumeEditNew?resumeGuid=702ab85c-359e-48cf-a49f-a784ef2bffdd" target="_blank" rel="noreferrer" aria-label="系統會員表單篩選功能作品說明">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111首頁切版.jpg" alt="2021年1111首頁" />
+                <span class="work-index">12</span>
+                <h3>2021年1111首頁</h3>
+                <p>負責1111首頁改版前端開發與各瀏覽器功能開發</p>
+                <p>使用HTML與SCSS建置RWD響應式網站介面</p>
+                <p>開發與維護JavaScript功能及Bootstrap元件</p>
+                <p>使用Git版控協作提升專案開發效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/1111home.png" data-fancybox="code-UI" data-caption="2021年1111首頁" aria-label="2021年1111首頁">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/1111會員中心切版.jpg" alt="1111會員中心" />
+                <span class="work-index">13</span>
+                <h3>1111會員中心</h3>
+                <p>負責1111會員中心內部頁面前端開發與各瀏覽器功能開發</p>
+                <p>使用HTML、SCSS進行元件化與RWD</p>
+                <p>開發與維護JavaScript互動功能及Bootstrap元件</p>
+                <p>使用Git版控並調整ASP CsHtml頁面內容</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/asp.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://www.1111.com.tw/login/Index?agent=f1_out_gds_co_home_20260616" target="_blank" rel="noreferrer" aria-label="系統會員表單篩選功能作品說明">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/work2.jpg" alt="系統會員等級設定後台截圖" />
+                <span class="work-index">14</span>
+                <h3>內部系統會員等級設定後台</h3>
+                <p>負責會員等級設定後台功能開發與維護</p>
+                <p>使用React、Next.js與Material UI建置介面</p>
+                <p>串接API進行資料查詢與設定更新功能</p>
+                <p>整合MySQL資料庫並使用Git版控協作</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MaterialUI.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MySQL.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/testa14.jpg" data-fancybox="code2-UI" data-caption="內部系統會員等級設定後台" aria-label="內部系統會員等級設定後台">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/work3.jpg" alt="系統會員錯誤內容下載截圖" />
+                <span class="work-index">15</span>
+                <h3>內部系統會員錯誤內容下載</h3>
+                <p>負責會員錯誤內容下載功能開發與維護</p>
+                <p>使用React、Next.js與Material UI建置介面</p>
+                <p>串接API取得資料並轉換下載JSON檔案</p>
+                <p>整合MySQL資料庫並使用Git版控協作</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MaterialUI.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MongoDB.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/testa15.jpg" data-fancybox="code3-UI" data-caption="內部系統會員錯誤內容下載" aria-label="內部系統會員錯誤內容下載">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/work4.jpg" alt="系統會員表單篩選功能截圖" />
+                <span class="work-index">16</span>
+                <h3>系統會員表單篩選功能</h3>
+                <p>負責會員資料篩選功能開發與維護</p>
+                <p>使用React、Next.js與Material UI建置介面</p>
+                <p>串接GET API取得資料並實作篩選功能</p>
+                <p>整合MySQL資料庫並使用Git版控協作</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MaterialUI.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MySQL.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/testa16.jpg" data-fancybox="code4-UI" data-caption="系統會員表單篩選功能" aria-label="系統會員表單篩選功能">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/testaWordpress.jpg" alt="系統會員表單篩選功能截圖" />
+                <span class="work-index">17</span>
+                <h3>Testa Wordpress</h3>
+                <p>負責Testa WordPress網站維護與優化</p>
+                <p>安裝並設定SEO與滾動效果相關外掛</p>
+                <p>排除網站功能異常與版面顯示問題</p>
+                <p>新增外掛功能並進行後續測試調整</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/wordpress.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/css.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://www.testa.io/" data-fancybox="code4-UI" data-caption="系統會員表單篩選功能" aria-label="系統會員表單篩選功能">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/台南前台.jpg" alt="系統會員表單篩選功能截圖" />
+                <span class="work-index">18</span>
+                <h3>臺南市停車營運管理系統</h3>
+                <p>參與臺南市停車營運管理系統TypeScript建置介面開發專案</p>
+                <p>使用React與Next.js建置管理操作介面及Tailwind樣式</p>
+                <p>串接登入驗證、會員管理及表單API</p>
+                <p>連接MySQL資料庫並透過Git協作開發</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ts.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/tailwind.webp" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MySQL.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/台南img2.jpg" data-fancybox="code5-UI" data-caption="臺南市停車營運管理系統" aria-label="臺南市停車營運管理系統">前往詳細</a>
+                <a href="assets/台南img.jpg" data-fancybox="code5-UI" data-caption="臺南市停車營運管理系統" hidden></a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/台南後台.jpg" alt="系統會員表單篩選功能截圖" />
+                <span class="work-index">19</span>
+                <h3>臺南市停車營運管理系統 後端管理系統</h3>
+                <p>負責臺南市停車營運管理後台系統TypeScript建置介面開發專案</p>
+                <p>使用React、Next.js與Tailwind建置管理介面</p>
+                <p>串接登入驗證、CRUD、檔案上傳與編輯器功能</p>
+                <p>整合前後台資料串接、MySQL與Git版控</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ts.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/tailwind.webp" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MySQL.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/後台1.jpg" data-fancybox="code6-UI" data-caption="臺南市停車營運管理系統 最新消息" aria-label="臺南市停車營運管理系統 後端管理系統">前往詳細</a>
+                <a href="assets/後台2.jpg" data-fancybox="code6-UI" data-caption="臺南市停車營運管理系統 下載專區" hidden></a>
+                <a href="assets/後台3.jpg" data-fancybox="code6-UI" data-caption="臺南市停車營運管理系統 注意事項" hidden></a>
+                <a href="assets/後台4.jpg" data-fancybox="code6-UI" data-caption="臺南市停車營運管理系統 公告事項" hidden></a>
+                <a href="assets/後台5.jpg" data-fancybox="code6-UI" data-caption="臺南市停車營運管理系統 登入畫面" hidden></a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/基隆.jpg" alt="系統會員表單篩選功能截圖" />
+                <span class="work-index">20</span>
+                <h3>基隆路口防護系統後端平台</h3>
+                <p>負責基隆路口防護系統後台TypeScript建置介面開發專案</p>
+                <p>使用Angular建置管理介面與功能模組</p>
+                <p>整合OpenLayers地圖、即時影像與圖表功能</p>
+                <p>串接API、MySQL資料庫並使用Git版控</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/Angular.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ts.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/tailwind.webp" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MySQL.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/git.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/基隆01.jpg" data-fancybox="code7-UI" data-caption="基隆路口防護系統後端平台" aria-label="基隆路口防護系統後端平台">前往詳細</a>
+                <a href="assets/基隆02.jpg" data-fancybox="code7-UI" data-caption="基隆路口防護系統後端平台" hidden></a>
+                <a href="assets/基隆03.jpg" data-fancybox="code7-UI" data-caption="基隆路口防護系統後端平台" hidden></a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/Puffs.png" alt="泡芙網站作品截圖" />
+                <span class="work-index">21</span>
+                <h3>Vue3 + Vite 泡芙購物網站</h3>
+                <p>製作泡芙購物網站前後台功能開發</p>
+                <p>使用Vue3與Vite建置網站介面與功能</p>
+                <p>開發商品、訂單CRUD及產品上傳功能</p>
+                <p>整合前後台資料串接並使用Git版控</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/Vue.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://tytyuuut.github.io/test20241111/#/index" target="_blank" rel="noreferrer" aria-label="查看 Vue3 + Vite 泡芙網站">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/netfilx.jpg" alt="Netflix 作品截圖" />
+                <span class="work-index">22</span>
+                <h3>React + Vite Netflix</h3>
+                <p>製作Netflix影音平台前後端功能開發</p>
+                <p>使用React、Vite與Tailwind建置網站介面</p>
+                <p>串接TMDB資料並開發登入註冊功能</p>
+                <p>使用Node.js與MongoDB建置後端服務</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/tailwind.webp" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/node.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MongoDB.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="https://netflix-test.onrender.com/" target="_blank" rel="noreferrer" aria-label="查看 React + Vite Netflix">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/next.jpg" alt="Next 購物網站截圖" />
+                <span class="work-index">23</span>
+                <h3>React + Next 露營購物網站</h3>
+                <p>負責露營電商平台前後端功能開發與維護</p>
+                <p>使用React、Next.js與Bootstrap建置介面</p>
+                <p>開發優惠券、首頁資料與搜尋功能模組</p>
+                <p>使用Node.js、MySQL實作CRUD資料串接</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/node.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/MySQL.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/大專06.jpg" data-fancybox="code8-UI" data-caption="基隆路口防護系統後端平台" aria-label="基隆路口防護系統後端平台">前往詳細</a>
+                <a href="assets/大專01.jpg" data-fancybox="code8-UI" data-caption="基隆路口防護系統後端平台" hidden></a>
+                <a href="assets/大專02.jpg" data-fancybox="code8-UI" data-caption="基隆路口防護系統後端平台" hidden></a>
+                <a href="assets/大專03.jpg" data-fancybox="code8-UI" data-caption="基隆路口防護系統後端平台" hidden></a>
+                <a href="assets/大專04.jpg" data-fancybox="code8-UI" data-caption="基隆路口防護系統後端平台" hidden></a>
+                <a href="assets/大專05.jpg" data-fancybox="code8-UI" data-caption="基隆路口防護系統後端平台" hidden></a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/reactNative.jpg" alt="React Native 備忘錄截圖" />
+                <span class="work-index">24</span>
+                <h3>React Native 備忘錄</h3>
+                <p>開發React Native跨平台備忘錄應用程式</p>
+                <p>使用Expo建置iOS與Android應用環境</p>
+                <p>設計備忘錄資料管理與操作流程</p>
+                <p>實作完整CRUD功能提升資料管理效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react-native-icon.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ts.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/expo.webp" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/APP-DARK.jpg" data-fancybox="code15-UI" data-caption="React Native 備忘錄 - 暗色系主頁" aria-label="React Native 備忘錄">前往詳細</a>
+                <a href="assets/APP-DARK-SETTING.jpg" data-fancybox="code15-UI" data-caption="React Native - 暗色系設定" hidden></a>
+                <a href="assets/APP-LIGH-ADD.jpg" data-fancybox="code15-UI" data-caption="React Native 備忘錄 - 亮色系新增" hidden></a>
+                <a href="assets/APP-LIGH-DELETE.jpg" data-fancybox="code15-UI" data-caption="React Native 備忘錄 - 亮色系刪除" hidden></a>
+                <a href="assets/APP-LIGH-SETTING.jpg" data-fancybox="code15-UI" data-caption="React Native 備忘錄 - 亮色系設定" hidden></a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/py-form.jpg" alt="React Python Todoist 截圖" />
+                <span class="work-index">25</span>
+                <h3>React + Python Todoist</h3>
+                <p>製作TodoList系統前後端功能開發</p>
+                <p>使用React與Vite建置操作介面</p>
+                <p>使用Python Flask開發RESTful API服務</p>
+                <p>整合Flask-SQLAlchemy進行資料庫管理</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/react.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Illustrator" title="Illustrator" />
+                  <img class="work-tool-icon" src="assets/python.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/PYTHONReact.jpg" data-fancybox="code16-UI" data-caption="React + Python Todoist" aria-label="React + Python Todoist">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/phpwork.jpg" alt="PHP 後台作品截圖" />
+                <span class="work-index">26</span>
+                <h3>PHP 購物網站後台</h3>
+                <p>參與購物網站後台管理系統開發專案</p>
+                <p>使用PHP開發後台操作介面與功能</p>
+                <p>實作CRUD功能完成資料管理流程</p>
+                <p>整合MySQL資料庫進行資料存取</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/php.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/css.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/MySQL.png" alt="Illustrator" title="Illustrator" />
+                </div>
+                <a href="assets/PHP後台.jpg" data-fancybox="code9-UI" data-caption="PHP 購物網站後台">前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/watch.webp" alt="手錶購物車網站截圖" />
+                <span class="work-index">27</span>
+                <h3>Vue + Nuxt 手錶購物車</h3>
+                <p>製作手錶電商網站前端介面開發</p>
+                <p>使用Vue與Nuxt建置商品展示頁面</p>
+                <p>使用SCSS進行響應式版面設計與維護</p>
+                <p>整合JavaScript功能及Bootstrap元件</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/nuxt.webp" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://tytyuuut.github.io/watch_web/" target="_blank" rel="noreferrer" aria-label="查看 Vue + Nuxt 手錶購物車">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/pasta.webp" alt="義大利麵網站截圖" />
+                <span class="work-index">28</span>
+                <h3>Vue + Nuxt 義大利麵網站</h3>
+                <p>製作義大利麵品牌網站前端開發</p>
+                <p>使用Vue與Nuxt建置形象網站介面</p>
+                <p>運用SCSS開發RWD響應式網站版型</p>
+                <p>整合JavaScript功能及Bootstrap元件</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/nuxt.webp" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://tytyuuut.github.io/pasta/" target="_blank" rel="noreferrer" aria-label="查看 Vue + Nuxt 義大利麵網站">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/theen.webp" alt="牙醫形象網站截圖" />
+                <span class="work-index">29</span>
+                <h3>Vue + Tailwind 牙醫形象網站</h3>
+                <p>製作牙醫形象前端開發</p>
+                <p>使用Vue與Nuxt建置形象網站介面</p>
+                <p>運用SCSS開發RWD響應式網站版型</p>
+                <p>整合Tailwind元件開發</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/nuxt.webp" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/tailwind.webp" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://tytyuuut.github.io/teeth/" target="_blank" rel="noreferrer" aria-label="查看 Vue + Tailwind 牙醫形象網站">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/cake1111.jpg" alt="牙醫形象網站截圖" />
+                <span class="work-index">30</span>
+                <h3>Baker麵包店網頁</h3>
+                <p>負責Baker麵包店形象網頁前端開發</p>
+                <p>運用SCSS開發RWD響應式網站版型</p>
+                <p>使用rellaxJS視差滾動效果顯示</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt16/" target="_blank" rel="noreferrer" aria-label="Baker麵包店網頁">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/04.jpg" alt="牙醫形象網站截圖" />
+                <span class="work-index">31</span>
+                <h3>隔設計公司網頁</h3>
+                <p>負責隔設計公司形象網頁前端開發</p>
+                <p>運用CSS開發RWD響應式網站版型</p>
+                <p>使用jquery錨點滾動功能</p>
+                <p>Owl Carousel輪播外掛效果</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/css.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/jquery.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://ccssy123.github.io/0814-noodles/" target="_blank" rel="noreferrer" aria-label="Baker麵包店網頁">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/Artboard 13.jpg" alt="牙醫形象網站截圖" />
+                <span class="work-index">32</span>
+                <h3>嵐拉麵網頁</h3>
+                <p>負責嵐拉麵形象網頁前端開發</p>
+                <p>運用CSS開發RWD響應式網站版型</p>
+                <p>使用jquery錨點滾動功能</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/css.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/jquery.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://tytyuuut.github.io/0429-txt16/index.html" target="_blank" rel="noreferrer" aria-label="Baker麵包店網頁">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/宇禾數位網頁切版.jpg" alt="宇禾數位網頁" />
+                <span class="work-index">33</span>
+                <h3>宇禾數位網頁</h3>
+                <p>負責宇禾數位企業形象網站前端開發</p>
+                <p>使用HTML與SCSS建置RWD響應式介面</p>
+                <p>整合Bootstrap元件提升開發效率</p>
+                <p>規劃SEO關鍵字與網站Meta資訊優化</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="assets/FIA01.jpg" data-fancybox="code9-UI" data-caption="宇禾數位網頁 - 首頁">前往詳細</a>
+                <a href="assets/FIA02.jpg" data-fancybox="code9-UI" data-caption="宇禾數位網頁 - 聯絡我們" hidden>前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/香草蛋糕官網切版.jpg" alt="香草蛋糕官網" />
+                <span class="work-index">34</span>
+                <h3>香草蛋糕官網</h3>
+                <p>負責香草蛋糕官網形象網站前端開發</p>
+                <p>使用HTML與SCSS建置RWD響應式介面</p>
+                <p>整合Bootstrap元件提升開發效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="assets/cake01.jpg" data-fancybox="code10-UI" data-caption="香草蛋糕官網 - 首頁">前往詳細</a>
+                <a href="assets/cake02.jpg" data-fancybox="code10-UI" data-caption="香草蛋糕官網 - 圓蛋糕" hidden>前往詳細</a>
+                <a href="assets/cake03.jpg" data-fancybox="code10-UI" data-caption="香草蛋糕官網 - 切片蛋糕" hidden>前往詳細</a>
+                <a href="assets/cake04.jpg" data-fancybox="code10-UI" data-caption="香草蛋糕官網 - 聯絡我們" hidden>前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/高遠新村網站切版.jpg" alt="高遠新村網站" />
+                <span class="work-index">35</span>
+                <h3>高遠新村網站</h3>
+                <p>負責高遠新村官網形象網站前端開發</p>
+                <p>使用HTML與SCSS建置RWD響應式介面</p>
+                <p>整合Bootstrap元件提升開發效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="assets/seacontent.jpg" data-fancybox="code13-UI" data-caption="高遠新村網站 - 高遠山細項">前往詳細</a>
+                <a href="assets/PreservedSeafood.jpg" data-fancybox="code13-UI" data-caption="高遠新村網站 - 高遠山海味" hidden>前往詳細</a>
+                <a href="assets/seafeeling.jpg" data-fancybox="code13-UI" data-caption="高遠新村網站 - 高遠山海情" hidden>前往詳細</a>
+                <a href="assets/seaview.jpg" data-fancybox="code13-UI" data-caption="高遠新村網站 - 高遠山海觀" hidden>前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/貨櫃達人官網設計.jpg" alt="貨櫃達人官網設計" />
+                <span class="work-index">36</span>
+                <h3>貨櫃達人官網設計</h3>
+                <p>負責貨櫃達人官網形象網站前端開發</p>
+                <p>使用HTML與SCSS建置RWD響應式介面</p>
+                <p>整合Bootstrap元件提升開發效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="assets/container - 展場貨櫃.jpg" data-fancybox="code11-UI" data-caption="貨櫃達人官網設計 - 展場貨櫃">前往詳細</a>
+                <a href="assets/container - 3D繪圖.jpg" data-fancybox="code11-UI" data-caption="貨櫃達人官網設計 - 3D繪圖" hidden>前往詳細</a>
+                <a href="assets/container - 住家.jpg" data-fancybox="code11-UI" data-caption="貨櫃達人官網設計 - 住家" hidden>前往詳細</a>
+                <a href="assets/container - 貨櫃市集細項.jpg" data-fancybox="code11-UI" data-caption="貨櫃達人官網設計 - 貨櫃市集細項" hidden>前往詳細</a>
+              </article>
+              <!-- <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/進鴻聲光科技官網.jpg" alt="進鴻聲光科技官網" />
+                <span class="work-index">37</span>
+                <h3>進鴻聲光科技官網</h3>
+                <p>負責進鴻聲光科技官網形象網站前端開發</p>
+                <p>使用HTML與SCSS建置RWD響應式介面</p>
+                <p>整合Bootstrap元件提升開發效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://tytyuuut.github.io/teeth/" target="_blank" rel="noreferrer" aria-label="查看 Vue + Tailwind 牙醫形象網站">View Project</a>
+              </article> -->
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/韃靼設計工程切版.jpg" alt="韃靼設計工程" />
+                <span class="work-index">37</span>
+                <h3>達達設計工程</h3>
+                <p>負責韃靼設計工程官網形象網站前端開發</p>
+                <p>使用HTML與SCSS建置RWD響應式介面</p>
+                <p>整合Bootstrap元件提升開發效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="assets/interiordesign01.jpg" data-fancybox="code14-UI" data-caption="達達設計工程 - 首頁">前往詳細</a>
+                <a href="assets/interiordesign02.jpg" data-fancybox="code14-UI" data-caption="達達設計工程 - 關於我們" hidden>前往詳細</a>
+                <a href="assets/interiordesign03.jpg" data-fancybox="code14-UI" data-caption="達達設計工程 - 流程" hidden>前往詳細</a>
+                <a href="assets/interiordesign04.jpg" data-fancybox="code14-UI" data-caption="達達設計工程 - 作品資訊" hidden>前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/Dr.KJ康健博士網站切版.jpg" alt="Dr.KJ康健博士網站" />
+                <span class="work-index">38</span>
+                <h3>Dr.KJ康健博士網站</h3>
+                <p>負責Dr.KJ康健博士官網形象網站前端開發</p>
+                <p>使用HTML與SCSS建置RWD響應式介面</p>
+                <p>整合Bootstrap元件提升開發效率</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/Bootstrap.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="assets/KJ01.jpg" data-fancybox="code12-UI" data-caption="Dr.KJ康健博士網站 - 首頁">前往詳細</a>
+                <a href="assets/KJ02.jpg" data-fancybox="code12-UI" data-caption="Dr.KJ康健博士網站 - 關於我們" hidden>前往詳細</a>
+                <a href="assets/KJ03.jpg" data-fancybox="code12-UI" data-caption="Dr.KJ康健博士網站 - 最新消息" hidden>前往詳細</a>
+                <a href="assets/KJ04.jpg" data-fancybox="code12-UI" data-caption="Dr.KJ康健博士網站 - SGS" hidden>前往詳細</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/game_test.webp" alt="HTML5 遊戲練習截圖" />
+                <span class="work-index">39</span>
+                <h3>HTML5 2D遊戲</h3>
+                <p>HTML前端開發撰寫</p>
+                <p>怪物與人物跟場景設計</p>
+                <p>撰寫canvas撰寫功能</p>
+                <p>使用Phaserjs完成遊戲執行</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ai.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/ps.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/figma.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://tytyuuut.github.io/game_test/" target="_blank" rel="noreferrer" aria-label="查看 HTML5 遊戲練習">前往連結</a>
+              </article>
+              <article data-aos="zoom-in-up" class="work-card">
+                <img class="work-thumb" src="assets/game_test2.webp" alt="HTML5 遊戲練習截圖" />
+                <span class="work-index">40</span>
+                <h3>HTML5 打磚塊遊戲</h3>
+                <p>HTML前端開發撰寫</p>
+                <p>撰寫canvas撰寫功能</p>
+                <div class="work-tools" aria-label="使用工具">
+                  <img class="work-tool-icon" src="assets/html.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/scss.png" alt="Photoshop" title="Photoshop" />
+                  <img class="work-tool-icon" src="assets/javascript.png" alt="Photoshop" title="Photoshop" />
+                </div>
+                <a href="https://tytyuuut.github.io/game_test/" target="_blank" rel="noreferrer" aria-label="查看 HTML5 遊戲練習">前往連結</a>
+              </article>
+            </div>
+          </div>       
+        </section>
+      </main>
     </div>
-    </div>
-</body>
-<script src="vender/jquery-3.3.1.min.js"></script>
-<!-- <script src="vender/typed.js-master/demos.js"></script> -->
-<script src="vender/typed.js-master/typed.min.js"></script>
-<script src="vender/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
-<script src="vender/fancybox-master/jquery.fancybox.min.js"></script>
-<script src="vender/jQuery-One-Page-Nav-master/jquery.nav.js"></script>
-<script src="vender/aos/aos.js"></script>
 
-<script type="text/javascript">
-AOS.init();
-// Owl-carousel initialize
-
-var graphics = document.querySelector('.work-item .graphics');
-var web = document.querySelector('.work-item .web');
-var work = document.querySelector('.work-item .work');
-var ui = document.querySelector('.work-item .ui_design');
-var btn = document.querySelectorAll('.work-item .btn');
-var column = document.querySelectorAll('.row .column');
-var work_design = document.querySelectorAll('.row .work_design');
-var web_design = document.querySelectorAll('.row .web_design');
-var Graphics = document.querySelectorAll('.row .Graphics');
-
-function classstyle(){
-    column.forEach(column => {
-        column.classList.remove('active');
-    });
-    btn.forEach(btn => {
-        btn.classList.remove('active');
-    });
-}
-work.addEventListener('click', () => {
-    classstyle();
-    work_design.forEach(work_design => {
-        work_design.classList.add('active');
-    });
-    work.classList.add('active');
-});
-graphics.addEventListener('click', () => {
-    classstyle();
-    Graphics.forEach(Graphics => {
-        Graphics.classList.add('active');
-    });
-    graphics.classList.add('active');
-});
-web.addEventListener('click', () => {
-    classstyle();
-    web_design.forEach(web_design => {
-        web_design.classList.add('active');
-    });
-    web.classList.add('active');
-});
-
-
-
-
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1200: {
-            items: 4
-        }
-    }
-})
-
-//typed
-
-var typed3 = new Typed('#typed3', {
-    strings: ['I am <i>Andy Ben</i>', 'I am <strong>a Designer</strong>', 'I am <strong>a Engineer</strong>', 'This is my portfolio'],
-    typeSpeed: 50,
-    backSpeed: 50,
-    smartBackspace: true, // this is a default
-    loop: true
-});
-
-
-// one page nav initialize
-$('.js-one-page-nav').onePageNav({
-    currentClass: 'current',
-    });
-$('.js-one-page-nav').onePageNav({
-        currentClass: 'active'
-    }); 
-//彈跳選單
-$('.js-dropdown-btn').on('click',function(){
-    $(this).toggleClass('active');
-    $('.js-dropdown-content').toggleClass('active');
-})
-$('.menu-link').on('click',function(){
-    $('.js-dropdown-btn').toggleClass('active');
-    $('.navbar .menu').toggleClass('active');
-})
-
-
-    
-
-</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

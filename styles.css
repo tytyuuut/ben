@@ -131,7 +131,7 @@ a {
   padding: clamp(28px, 6vw, 82px);
   background:
     linear-gradient(90deg, rgba(255, 249, 236, 0.96) 0%, rgba(255, 249, 236, 0.82) 36%, rgba(23, 18, 44, 0.06) 62%, rgba(23, 18, 44, 0.22) 100%),
-    url("assets/ChatGPT.png") center / cover no-repeat;
+    url("images/ChatGPT.png") center / cover no-repeat;
 }
 
 
@@ -716,7 +716,7 @@ h3 {
     padding: 42px 20px;
     /* background:
       linear-gradient(rgba(255, 249, 236, 0.9), rgba(255, 249, 236, 0.7)),
-      url("assets/ChatGPT.png") center / cover no-repeat; */
+      url("images/ChatGPT.png") center / cover no-repeat; */
   }
 
   .typing-hero {
